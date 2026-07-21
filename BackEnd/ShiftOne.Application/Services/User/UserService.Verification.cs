@@ -32,6 +32,29 @@ namespace ShiftOne.Application.Services.User
             return GeneralResponse.Ok("Messages.EmailVerificationCodeSent");
         }
 
+        public async Task<GeneralResponse> SendVerifyPhoneCodeAsync(SendVerifyPhoneCodeRequest sendVerifyPhoneCodeRequest)
+        {
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == sendVerifyPhoneCodeRequest.phone);
+            if (user == null)
+                return GeneralResponse.Ok("Messages.Success");
+
+            try
+            {
+                if (string.IsNullOrWhiteSpace(user.PhoneNumber))
+                {
+                    return GeneralResponse.Ok("Messages.Success");
+                }
+
+                await _verificationService.GenerateAndSavePhoneCodeAsync(user.Id, user.PhoneNumber);
+            }
+            catch (Exception ex)
+            {
+                return GeneralResponse.InternalError("Messages.OperationFailed", new { Error = ex.Message });
+            }
+
+            return GeneralResponse.Ok("Messages.Success");
+        }
+
         public async Task<GeneralResponse> VerifyEmailAsync(VerifyEmailRequest verifyEmailRequest)
         {
             try

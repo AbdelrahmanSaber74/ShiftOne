@@ -17,6 +17,10 @@ namespace ShiftOne.Shared.Requests.User
         [RegularExpression(@"^(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$", ErrorMessage = "Passwords must have at least one uppercase ('A'-'Z'), at least one digit ('0'-'9'), and be at least 8 characters long.")]
         [MaxLength(50, ErrorMessage = "Password cannot exceed 50 characters.")]
         public string newPassword { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Confirm password is required.")]
+        [Compare("newPassword", ErrorMessage = "Passwords do not match.")]
+        public string confirmPassword { get; set; } = string.Empty;
     }
 }
 

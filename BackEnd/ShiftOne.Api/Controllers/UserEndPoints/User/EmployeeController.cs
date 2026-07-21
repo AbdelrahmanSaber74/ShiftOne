@@ -62,6 +62,28 @@ namespace ShiftOne.Api.Controllers.UserEndPoints.User
             return result.ToActionResult();
         }
 
+        /// <summary>Send phone verification code via SMS/Mock.</summary>
+        [AllowAnonymous]
+        [HttpPost("SendVerifyPhoneCode")]
+        [SwaggerRequestExample(typeof(SendVerifyPhoneCodeRequest), typeof(SendVerifyPhoneCodeRequest))]
+        public async Task<IActionResult> SendVerifyPhoneCodeAsync([FromBody] SendVerifyPhoneCodeRequest request)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var result = await _userService.SendVerifyPhoneCodeAsync(request);
+            return result.ToActionResult();
+        }
+
+        /// <summary>Reset an employee password using a phone verification code.</summary>
+        [AllowAnonymous]
+        [HttpPost("ResetPasswordByPhone")]
+        [SwaggerRequestExample(typeof(ResetPasswordByPhoneRequest), typeof(ResetPasswordByPhoneRequest))]
+        public async Task<IActionResult> ResetPasswordByPhoneAsync([FromBody] ResetPasswordByPhoneRequest resetPasswordRequest)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var result = await _userService.ResetPasswordByPhoneAsync(resetPasswordRequest);
+            return result.ToActionResult();
+        }
+
         /// <summary>Update the authenticated employee profile.</summary>
         [HasPermission(Permissions.Profile.Edit)]
         [HttpPut("EditProfile")]

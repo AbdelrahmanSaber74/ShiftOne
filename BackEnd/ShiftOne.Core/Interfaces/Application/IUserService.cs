@@ -17,6 +17,7 @@ namespace ShiftOne.Core.Interfaces.Application
         Task<GeneralResponse> GetCurrentAdminContextAsync();
         Task<GeneralResponse> AdminGetUserByIdAsync(Guid userId);
         Task<GeneralResponse> SendVerifyEmailCodeAsync(SendVerifyEmailCodeRequest sendVerifyEmailCodeRequest);
+        Task<GeneralResponse> SendVerifyPhoneCodeAsync(SendVerifyPhoneCodeRequest sendVerifyPhoneCodeRequest);
         Task<GeneralResponse> VerifyEmailAsync(VerifyEmailRequest verifyEmailRequest);
         Task<GeneralResponse> VerifyPhoneAsync(VerifyPhoneRequest verifyEmailRequest);
         Task<GeneralResponse> SendPasswordResetUrlAsync(SendPasswordResetUrlRequest sendPasswordResetUrlRequest);
