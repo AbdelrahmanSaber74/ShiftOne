@@ -28,14 +28,6 @@ namespace ShiftOne.Api.Controllers.UserEndPoints.User
             _userService = userService;
         }
 
-        /// <summary>Employee self-registration is disabled for the MVP. Employees are created from the dashboard.</summary>
-        [AllowAnonymous]
-        [HttpPost("register")]
-        public IActionResult Register()
-        {
-            return StatusCode(StatusCodes.Status410Gone, GeneralResponse.BadRequest("Messages.EmployeeSelfRegistrationDisabled"));
-        }
-
         /// <summary>Refresh an employee access token using a valid refresh token.</summary>
         [AllowAnonymous]
         [HttpPost("RefreshToken")]
@@ -59,50 +51,6 @@ namespace ShiftOne.Api.Controllers.UserEndPoints.User
             return result.ToActionResult();
         }
 
-        /// <summary>Send a password reset link to the employee email address.</summary>
-        [AllowAnonymous]
-        [HttpPost("SendPasswordResetUrl")]
-        [SwaggerRequestExample(typeof(SendPasswordResetUrlRequest), typeof(SendPasswordResetUrlRequest))]
-        public async Task<IActionResult> SendPasswordResetUrlAsync([FromBody] SendPasswordResetUrlRequest request)
-        {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-            var result = await _userService.SendPasswordResetUrlAsync(request);
-            return result.ToActionResult();
-        }
-
-        /// <summary>Reset an employee password using an email reset token.</summary>
-        [AllowAnonymous]
-        [HttpPost("ResetPassword")]
-        [SwaggerRequestExample(typeof(ResetPasswordRequest), typeof(ResetPasswordRequest))]
-        public async Task<IActionResult> ResetPasswordAsync([FromBody] ResetPasswordRequest resetPasswordRequest)
-        {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-            var result = await _userService.ResetPasswordAsync(resetPasswordRequest);
-            return result.ToActionResult();
-        }
-
-        /// <summary>Reset an employee password using a phone verification code.</summary>
-        [AllowAnonymous]
-        [HttpPost("ResetPasswordByPhone")]
-        [SwaggerRequestExample(typeof(ResetPasswordByPhoneRequest), typeof(ResetPasswordByPhoneRequest))]
-        public async Task<IActionResult> ResetPasswordByPhoneAsync([FromBody] ResetPasswordByPhoneRequest resetPasswordRequest)
-        {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-            var result = await _userService.ResetPasswordByPhoneAsync(resetPasswordRequest);
-            return result.ToActionResult();
-        }
-
-        /// <summary>Verify an employee email address using a verification code.</summary>
-        [AllowAnonymous]
-        [HttpPost("VerifyEmail")]
-        [SwaggerRequestExample(typeof(VerifyEmailRequest), typeof(VerifyEmailRequest))]
-        public async Task<IActionResult> VerifyEmailAsync([FromBody] VerifyEmailRequest verifyEmailRequest)
-        {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-            var result = await _userService.VerifyEmailAsync(verifyEmailRequest);
-            return result.ToActionResult();
-        }
-
         /// <summary>Verify an employee phone number using a verification code.</summary>
         [AllowAnonymous]
         [HttpPost("VerifyPhone")]
@@ -111,17 +59,6 @@ namespace ShiftOne.Api.Controllers.UserEndPoints.User
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             var result = await _userService.VerifyPhoneAsync(verifyPhoneRequest);
-            return result.ToActionResult();
-        }
-
-        /// <summary>Send an email verification code to an employee.</summary>
-        [AllowAnonymous]
-        [HttpPost("SendVerifyEmailCode")]
-        [SwaggerRequestExample(typeof(SendVerifyEmailCodeRequest), typeof(SendVerifyEmailCodeRequest))]
-        public async Task<IActionResult> SendVerifyEmailCodeAsync([FromBody] SendVerifyEmailCodeRequest request)
-        {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-            var result = await _userService.SendVerifyEmailCodeAsync(request);
             return result.ToActionResult();
         }
 
