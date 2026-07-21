@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "title": "الملف الشخصي",
+    "generalInfo": "معلومات عامة",
+    "personalSettings": "الإعدادات الشخصية",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "saveChanges": "حفظ التغييرات",
+    "desc": "اعرض وأدر إعدادات الحساب والبيانات الشخصية والأدوار.",
+    "roleBadge": "الدور",
+    "uploadButton": "رفع صورة جديدة",
+    "profileDesc": "سياق الحساب الحالي القادم من واجهة البرمجة.",
+    "refreshProfile": "تحديث الملف",
+    "noPrimaryContact": "لا توجد وسيلة اتصال أساسية",
+    "notProvided": "غير متوفر",
+    "emailStatus": "حالة البريد",
+    "phoneStatus": "حالة الهاتف",
+    "verified": "مؤكد",
+    "pendingVerification": "بانتظار التأكيد",
+    "personalInfo": "المعلومات الشخصية",
+    "contactInfo": "معلومات الاتصال",
+    "accountSecurity": "أمان الحساب والصلاحيات",
+    "rolesHeader": "الأدوار المعينة",
+    "permissionsHeader": "الصلاحيات الممنوحة",
+    "verifiedLabel": "مؤكد",
+    "pendingLabel": "معلق",
+    "email": "البريد الإلكتروني",
+    "phoneNumber": "رقم الهاتف"
+  }
+}

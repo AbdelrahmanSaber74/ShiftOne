@@ -1,0 +1,19 @@
+{
+    "navigation":  {
+                       "dashboard":  "لوحة التحكم",
+                       "users":  "إدارة المستخدمين",
+                       "profile":  "الملف الشخصي",
+                       "signIn":  "تسجيل الدخول",
+                       "myProfile":  "ملفي الشخصي",
+                       "plans":  "الخطط",
+                       "companies":  "الشركات",
+                       "subscriptions":  "الاشتراكات",
+                       "branches":  "الفروع",
+                       "employees":  "الموظفون",
+                       "attendance":  "الحضور",
+                       "roles":  "الأدوار",
+                       "permissions":  "الصلاحيات",
+                       "reports":  "التقارير",
+                       "workSchedules":  "مواعيد العمل"
+                   }
+}

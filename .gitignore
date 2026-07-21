@@ -1,0 +1,31 @@
+﻿# Visual Studio & .NET
+.vs/
+.vscode/
+bin/
+obj/
+publish/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+appsettings.Development.json
+appsettings.Local.json
+
+# Node.js & React FrontEnd
+node_modules/
+FrontEnd/node_modules/
+FrontEnd/build/
+FrontEnd/dist/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System & Local Logs
+*.log
+scratch/
+.system_generated/

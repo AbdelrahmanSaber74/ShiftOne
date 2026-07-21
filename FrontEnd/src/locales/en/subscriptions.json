@@ -1,0 +1,31 @@
+{
+  "subscriptions": {
+    "pageTitle": "Subscriptions",
+    "pageDesc": "Manage subscriber billing and quotas.",
+    "assignPlanBtn": "Assign Plan",
+    "totalSubscriptions": "Total Subscriptions",
+    "activeOnPage": "Active on Page",
+    "unlimitedPlans": "Unlimited Plans",
+    "searchPlaceholder": "Search subscriptions...",
+    "allCompanies": "All Companies",
+    "allPlans": "All Plans",
+    "emptyTitle": "No subscriptions yet",
+    "emptyDesc": "Assign a plan to a company to activate their subscription.",
+    "emptyAction": "Assign Subscription",
+    "titleAssign": "Assign Subscription",
+    "desc": "Choose the company, plan, and activation state for the subscription.",
+    "selectCompany": "Select Company",
+    "chooseCompany": "Choose Company",
+    "selectPlan": "Select Plan",
+    "choosePlan": "Choose Plan",
+    "activeSubscription": "Active Subscription",
+    "assignPlan": "Assign Plan",
+    "assigning": "Assigning",
+    "startsHeader": "Starts",
+    "endsHeader": "Ends",
+    "loadError": "Failed to load subscription data",
+    "selectCompanyPlan": "Please select company and plan",
+    "assigned": "Subscription assigned successfully",
+    "assignError": "Failed to assign subscription"
+  }
+}

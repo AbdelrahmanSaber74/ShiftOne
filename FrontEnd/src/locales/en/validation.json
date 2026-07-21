@@ -1,0 +1,20 @@
+{
+  "validation": {
+    "required": "This field is required.",
+    "email": "Please enter a valid email address.",
+    "phone": "Please enter a valid phone number.",
+    "emailOrPhone": "Please enter a valid email address or phone number.",
+    "minLength": "Must be at least {{count}} characters.",
+    "maxLength": "Must be {{count}} characters or less.",
+    "password": "Password must be between 8 and 50 characters.",
+    "number": "Please enter a valid number.",
+    "integer": "Please enter a whole number.",
+    "positiveNumber": "Value must be greater than zero.",
+    "nonNegativeNumber": "Value must be zero or greater.",
+    "numberRange": "Value must be between {{min}} and {{max}}.",
+    "selectRequired": "Please select an option.",
+    "invalidDateRange": "End date must be after start date.",
+    "moduleAction": "Use Module.Action format, for example Reports.Export.",
+    "atLeastOnePermission": "Select at least one permission."
+  }
+}

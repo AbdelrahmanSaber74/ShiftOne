@@ -1,0 +1,20 @@
+{
+  "attendance": {
+    "pageTitle": "الحضور",
+    "pageDesc": "مراجعة سجلات حضور الشركة الحالية.",
+    "totalLogs": "إجمالي السجلات",
+    "currentlyCheckedIn": "مسجلون حاليًا",
+    "searchPlaceholder": "ابحث في الحضور...",
+    "allBranches": "كل الفروع",
+    "notBound": "غير مرتبط",
+    "emptyTitle": "لا توجد سجلات حضور بعد",
+    "emptyDesc": "ستظهر السجلات بعد تسجيل حضور الموظفين.",
+    "dateHeader": "التاريخ",
+    "checkInHeader": "الحضور",
+    "checkOutHeader": "الانصراف",
+    "toastLoadFailed": "فشل تحميل سجلات الحضور",
+    "fromDate": "تاريخ البداية",
+    "toDate": "تاريخ النهاية",
+    "loadError": "تعذر تحميل سجلات الحضور"
+  }
+}

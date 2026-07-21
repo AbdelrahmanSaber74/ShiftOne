@@ -1,0 +1,35 @@
+export const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5234';
+
+export const API_ENDPOINTS = {
+  AUTH: {
+    LOGIN: '/api/employees/Employee/login',
+    REGISTER: '/api/employees/Employee/register',
+    REFRESH: '/api/employees/Employee/RefreshToken',
+    GET_PROFILE: '/api/employees/Employee/getmyprofile',
+    EDIT_PROFILE: '/api/employees/Employee/EditProfile',
+    ATTENDANCE_CHECK_IN: '/api/employees/attendance/check-in',
+    ATTENDANCE_CHECK_OUT: '/api/employees/attendance/check-out',
+  },
+  ADMIN: {
+    LOGIN: '/api/dashboard/Admin/login',
+    REFRESH: '/api/dashboard/Admin/RefreshToken',
+    GET_INFO: '/api/dashboard/Admin/getcurrentuserinfo',
+    GET_ALL_USERS: '/api/dashboard/Admin/GetAllUsers',
+    APPROVE_USER: '/api/dashboard/Admin/approve',
+    UNAPPROVE_USER: '/api/dashboard/Admin/unapprove',
+    GET_USER: '/api/dashboard/Admin/GetUserById',
+    EDIT_PROFILE: '/api/dashboard/Admin/EditProfile',
+    RESET_USER_PASSWORD: '/api/dashboard/Admin/reset-password',
+    ACTIVATE_USER_EMAIL: '/api/dashboard/Admin/activate-email',
+  },
+  PLANS: '/api/dashboard/plans',
+  COMPANIES: '/api/dashboard/companies',
+  SUBSCRIPTIONS: '/api/dashboard/subscriptions',
+  BRANCHES: '/api/dashboard/branches',
+  EMPLOYEES: '/api/dashboard/employees',
+  ATTENDANCE: '/api/dashboard/attendance',
+  WORK_SCHEDULES: '/api/dashboard/work-schedules',
+  ROLES: '/api/dashboard/roles',
+  PERMISSIONS: '/api/dashboard/permissions',
+  REPORTS: '/api/reports',
+} as const;

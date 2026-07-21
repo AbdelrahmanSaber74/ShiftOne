@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "pageTitle": "Permissions",
+    "pageDesc": "Manage dashboard permission keys used by roles and authorization policies.",
+    "addPermission": "Add Permission",
+    "searchPlaceholder": "Search permissions...",
+    "permissionHeader": "Permission",
+    "descriptionHeader": "Description",
+    "createdHeader": "Created",
+    "system": "System",
+    "custom": "Custom",
+    "allPermissions": "All Permissions",
+    "emptyTitle": "No permissions yet",
+    "emptyDesc": "Create permissions that can be assigned to dashboard roles.",
+    "emptyAction": "Create Permission",
+    "titleAdd": "Add Permission",
+    "titleEdit": "Edit Permission",
+    "desc": "Use a stable Module.Action name so policies and roles can reference it safely.",
+    "permissionName": "Permission Name",
+    "description": "Description",
+    "systemProtected": "System permission names are protected because they are referenced by authorization policies.",
+    "savePermission": "Save Permission",
+    "updated": "Permission updated",
+    "created": "Permission created",
+    "saveError": "Unable to save permission",
+    "deleted": "Permission deleted",
+    "deleteError": "Unable to delete permission",
+    "namePlaceholder": "Reports.Export",
+    "descriptionPlaceholder": "Describe what this permission allows",
+    "deleteTitle": "Delete Permission",
+    "deleteMessage": "This permission will be removed if it is not a protected system permission or assigned to roles."
+  }
+}

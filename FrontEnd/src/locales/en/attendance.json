@@ -1,0 +1,19 @@
+{
+  "attendance": {
+    "pageTitle": "Attendance",
+    "pageDesc": "Review attendance records for the current company.",
+    "totalLogs": "Total Attendance Logs",
+    "currentlyCheckedIn": "Currently Checked In",
+    "searchPlaceholder": "Search attendance...",
+    "allBranches": "All Branches",
+    "notBound": "Not bound",
+    "emptyTitle": "No attendance logs yet",
+    "emptyDesc": "Attendance records will appear here after employees check in.",
+    "dateHeader": "Date",
+    "checkInHeader": "Check In",
+    "checkOutHeader": "Check Out",
+    "loadError": "Failed to load attendance records",
+    "fromDate": "From date",
+    "toDate": "To date"
+  }
+}

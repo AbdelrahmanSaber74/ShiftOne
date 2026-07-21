@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\Infrastructure\BackgroundJobs\**" />
+    <EmbeddedResource Remove="Interfaces\Infrastructure\BackgroundJobs\**" />
+    <None Remove="Interfaces\Infrastructure\BackgroundJobs\**" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\ShiftOne.Shared\ShiftOne.Shared.csproj" />
+	</ItemGroup>
+
+</Project>
+

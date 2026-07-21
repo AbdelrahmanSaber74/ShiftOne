@@ -1,0 +1,33 @@
+{
+  "users": {
+    "title": "Users Management",
+    "description": "Search, review, approve, and deactivate ShiftOne customer accounts.",
+    "refreshUsers": "Refresh Users",
+    "searchPlaceholder": "Search by name, email, or phone",
+    "allUsers": "All users",
+    "activeStatus": "Active",
+    "inactiveStatus": "Inactive",
+    "userHeader": "User",
+    "contactHeader": "Contact",
+    "statusHeader": "Status",
+    "rolesHeader": "Roles",
+    "actionsHeader": "Actions",
+    "created": "Created {{date}}",
+    "createdUnknown": "Created unknown",
+    "unnamed": "Unnamed user",
+    "noEmail": "No email",
+    "noPhone": "No phone",
+    "deactivate": "Deactivate",
+    "approve": "Approve",
+    "emailVerified": "Email verified",
+    "emailPending": "Email pending",
+    "phoneVerified": "Phone verified",
+    "phonePending": "Phone pending",
+    "noUsersFound": "No users found",
+    "emptyStateDesc": "Adjust the search or status filters, then refresh the list.",
+    "pageIndicator": "Page {{page}} of {{totalPages}} · {{total}} total users",
+    "toastApproved": "User approved",
+    "toastDeactivated": "User deactivated",
+    "toastFailed": "User update failed"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "title": "Profile Info",
+    "generalInfo": "General Information",
+    "personalSettings": "Personal Settings",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "saveChanges": "Save Changes",
+    "desc": "View and manage your account settings, personal details, and active roles.",
+    "roleBadge": "Role",
+    "uploadButton": "Upload New Picture",
+    "profileDesc": "View the authenticated ShiftOne account context returned by the API.",
+    "refreshProfile": "Refresh Profile",
+    "noPrimaryContact": "No primary contact",
+    "notProvided": "Not provided",
+    "emailStatus": "Email status",
+    "phoneStatus": "Phone status",
+    "verified": "Verified",
+    "pendingVerification": "Pending verification",
+    "personalInfo": "Personal Information",
+    "contactInfo": "Contact Information",
+    "accountSecurity": "Account Security & Permissions",
+    "rolesHeader": "Assigned Roles",
+    "permissionsHeader": "Granted Permissions",
+    "verifiedLabel": "Verified",
+    "pendingLabel": "Pending",
+    "email": "Email",
+    "phoneNumber": "Phone Number"
+  }
+}

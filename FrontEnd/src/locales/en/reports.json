@@ -1,0 +1,130 @@
+{
+  "reports": {
+    "pageTitle": "Reports",
+    "pageDesc": "Generate clean operational reports with only the filters that matter for each report.",
+    "attendance": {
+      "title": "Attendance Report",
+      "description": "Attendance records, missing check-outs, and selected-day absence rows.",
+      "empty": "No attendance rows match the selected filters."
+    },
+    "employees": {
+      "title": "Employee Report",
+      "description": "Employee status, branch assignment, roles, and device readiness.",
+      "empty": "No employees match the selected filters."
+    },
+    "companies": {
+      "title": "Company Report",
+      "description": "Companies by plan, branch count, employee count, and subscription state.",
+      "empty": "No companies match the selected filters."
+    },
+    "branches": {
+      "title": "Branch Report",
+      "description": "Branch staffing, geofence readiness, and today attendance activity.",
+      "empty": "No branches match the selected filters."
+    },
+    "subscriptions": {
+      "title": "Subscription Report",
+      "description": "Subscription status, dates, prices, and remaining days.",
+      "empty": "No subscriptions match the selected filters."
+    },
+    "planUsage": {
+      "title": "Plan Usage Report",
+      "description": "Plan adoption and average usage across companies.",
+      "empty": "No plan usage rows match the selected filters."
+    },
+    "filters": {
+      "helper": "Adjust filters, then generate. Results stay stable until you refresh them.",
+      "pending": "Filters changed",
+      "search": "Search report data...",
+      "allCompanies": "All companies",
+      "allBranches": "All branches",
+      "allEmployees": "All employees",
+      "from": "Date from",
+      "to": "Date to",
+      "allRoles": "All roles",
+      "allSchedules": "All schedules"
+    },
+    "actions": {
+      "generate": "Generate",
+      "refresh": "Refresh report",
+      "exportXlsx": "Export XLSX",
+      "print": "Print",
+      "printFuture": "Print-ready layout will be enabled later."
+    },
+    "sort": {
+      "asc": "Ascending",
+      "desc": "Descending"
+    },
+    "status": {
+      "all": "All status",
+      "present": "Present",
+      "missingCheckOut": "Missing check-out",
+      "absent": "Absent",
+      "active": "Active",
+      "inactive": "Inactive",
+      "configured": "Configured",
+      "notConfigured": "Not configured",
+      "late": "Late",
+      "earlyArrival": "Early arrival",
+      "earlyLeave": "Early leave",
+      "overtime": "Overtime",
+      "outsideSchedule": "Outside schedule",
+      "dayOff": "Day off",
+      "holiday": "Holiday"
+    },
+    "columns": {
+      "company": "Company",
+      "companies": "Companies",
+      "branch": "Branch",
+      "branches": "Branches",
+      "employee": "Employee",
+      "employees": "Employees",
+      "date": "Date",
+      "status": "Status",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "device": "Device ID",
+      "email": "Email",
+      "phone": "Phone",
+      "roles": "Roles",
+      "joinedOn": "Joined on",
+      "deviceBound": "Device bound",
+      "plan": "Plan",
+      "subscriptionStatus": "Subscription status",
+      "expirationDate": "Expiration date",
+      "attendanceToday": "Attendance today",
+      "geoFence": "GeoFence",
+      "price": "Price",
+      "startDate": "Start date",
+      "endDate": "End date",
+      "remainingDays": "Remaining days",
+      "averageUsage": "Average usage",
+      "schedule": "Schedule",
+      "scheduledStart": "Scheduled start",
+      "scheduledEnd": "Scheduled end",
+      "workedMinutes": "Worked minutes",
+      "lateMinutes": "Late minutes",
+      "earlyLeaveMinutes": "Early leave minutes",
+      "overtimeMinutes": "Overtime minutes",
+      "holiday": "Holiday"
+    },
+    "empty": {
+      "generateTitle": "Generate a report",
+      "generateDesc": "Choose a report, set the filters you need, then generate results.",
+      "adjustFilters": "Try adjusting search or filters."
+    },
+    "export": {
+      "success": "Report exported successfully.",
+      "error": "Unable to export report."
+    },
+    "errors": {
+      "load": "Unable to load report.",
+      "references": "Some report filters could not be loaded."
+    },
+    "roles": {
+      "employee": "Employee",
+      "hr": "HR Staff",
+      "companyAdmin": "Company Admin"
+    }
+  }
+}

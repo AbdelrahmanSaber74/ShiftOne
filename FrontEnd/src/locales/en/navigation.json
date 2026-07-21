@@ -1,0 +1,17 @@
+{
+    "navigation":  {
+                       "dashboard":  "Main Dashboard",
+                       "users":  "Users Management",
+                       "profile":  "Profile",
+                       "signIn":  "Sign In",
+                       "myProfile":  "My Profile",
+                       "plans":  "Plans",
+                       "companies":  "Companies",
+                       "subscriptions":  "Subscriptions",
+                       "branches":  "Branches",
+                       "employees":  "Employees",
+                       "attendance":  "Attendance",
+                       "reports":  "Reports",
+                       "workSchedules":  "Work Schedules"
+                   }
+}
