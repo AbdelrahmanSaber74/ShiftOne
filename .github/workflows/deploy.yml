@@ -26,6 +26,7 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: 187.77.168.218
+          port: 2222
           username: root
           password: ${{ secrets.VPS_PASSWORD }}
           source: "./publish/*"
@@ -36,6 +37,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: 187.77.168.218
+          port: 2222
           username: root
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
